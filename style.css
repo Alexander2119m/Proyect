@@ -1,0 +1,163 @@
+/* Estilos generales para las cajas de inicio de sesión y registro */
+.login-box,
+.register-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(84, 99, 114, 0.5);
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(Imagenes/reloj.jpg);
+    height: 100vh;
+    width: 100vw; 
+}
+
+h1 {
+    color: #252020;
+    text-align: center;
+    font-size: 36px;
+  }
+p{
+    color: #060505;
+}
+
+
+/* Estilos para los títulos */
+.login-box h2,
+.register-box h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-align: center;
+
+}
+
+/* Estilos para los formularios */
+#login-form,
+#register-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Estilos para los campos de texto y contraseñas */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.2em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #1e90ff;
+  outline: none;
+}
+button {
+  background: #1e90ff;
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Relleno interior */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre él */
+}
+/* Estilos para los botones */
+button[type="submit"] {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #fff;
+  color: #1e90ff;
+}
+
+button[type="submit"] span {
+  position: absolute;
+  display: block;
+}
+
+button[type="submit"] span:nth-child(1) {
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #1e90ff);
+}
+
+button[type="submit"] span:nth-child(2) {
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom, transparent, #1e90ff);
+}
+
+button[type="submit"] span:nth-child(3) {
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #1e90ff);
+}
+
+button[type="submit"] span:nth-child(4) {
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to top, transparent, #1e90ff);
+}
+
+/* Estilos para los enlaces de registro e inicio de sesión */
+.register-link,
+.login-link {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.register-link a,
+.login-link a {
+  color:#1e90ff;
+  text-decoration: none;
+  }
+  
+  .register-link a:hover,
+  .login-link a:hover {
+  text-decoration: underline;
+  }
